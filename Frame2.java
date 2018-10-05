@@ -14,6 +14,7 @@ public class Frame2 extends JFrame{
     private JMenuItem jic = new JMenuItem("Close");
     private JMenuItem jie = new JMenuItem("Exit");
     private JMenuItem jiOX = new JMenuItem("0Xgame");
+    private JMenuItem jiDecrypt = new JMenuItem("Decrypt");
     public Frame2(){
         ex2();
     }
@@ -30,11 +31,20 @@ public class Frame2 extends JFrame{
         jmf.add(jic);
         jmf.add(jie);
         jmg.add(jiOX);
+        jmt.add(jiDecrypt);
         jiOX.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 OXgame game = new OXgame(Frame2.this);
                 game.setVisible(true);
+                Frame2.this.setVisible(false);
+            }
+        });
+        jiDecrypt.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Decrypt dec = new Decrypt(Frame2.this);
+                dec.setVisible(true);
                 Frame2.this.setVisible(false);
             }
         });
