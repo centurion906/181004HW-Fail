@@ -25,6 +25,9 @@ public class Decrypt extends JFrame {
     private JButton jbtRN = new JButton("Run");
     private JButton jbtCL = new JButton("Close");
     private ButtonGroup buttonGroup = new ButtonGroup();
+//    private String a;
+//    private char [] b = new char[a.length()];
+//    private int key, n;
     Frame2 frm5;
     public Decrypt(Frame2 frm6){
         frm5 = frm6;
@@ -57,7 +60,22 @@ public class Decrypt extends JFrame {
         jbtRN.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+//                a = Integer.parseInt((int)jtaL.getText());
+//               for (int i = 0;i<a.length();i++){
+//                   key = Integer.parseInt(jtf.getText());
+//                       char ch=a.charAt(i);
+//                       int num=(int)ch;
+//                       if(num>=48&&num<=57){
+//                           num+key=n;
+//                           num=num>57?num-10:num;
+//                       }else if(num>=65&&num<=90){
+//                           num+key=n;
+//                           num=num>90?num-26:num;
+//                       }else if(num>=97&&num<=122){
+//                           num+key=n;
+//                           num=num>122?num-26:num;
+//                   }
+//               }
             }
         });
         jbtCL.addActionListener(new ActionListener() {

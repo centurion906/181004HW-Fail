@@ -42,8 +42,7 @@ public class Login extends JFrame{
                 if (jft.getText().equals("1")&&(new String(jpw.getPassword()).equals("1"))){
                     Frame2 frm2 = new Frame2();
                     frm2.setVisible(true);
-//                    鍵盤沒Dispose
-                    Login.this.dispose();
+                    Login.this.setVisible(false);
                 }else {
                     JOptionPane.showMessageDialog(null,"Error");
                 }
@@ -52,5 +51,6 @@ public class Login extends JFrame{
     }
     public void setPassWord(String lg){
         jpw.setText(lg);
+
     }
 }

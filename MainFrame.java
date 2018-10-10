@@ -41,6 +41,8 @@ public class MainFrame extends JFrame {
 
         jbtns[10]=new JButton("Sub");
         jbtns[11]=new JButton("reflash");
+
+
         jpn.add(jbtns[10]);
         jpn.add(jbtns[11]);
         jbtns[10].addActionListener(new ActionListener() {
@@ -56,6 +58,8 @@ public class MainFrame extends JFrame {
                 genLabel(jbtnlabel);
                 for (int i=0;i<10;i++){
                     jbtns[i].setText(jbtnlabel[i]);
+
+
                 }
             }
         });
